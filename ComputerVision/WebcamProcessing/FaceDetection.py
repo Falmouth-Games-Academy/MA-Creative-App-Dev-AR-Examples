@@ -25,7 +25,7 @@ def main():
         # converting to gray scale
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         # Detect faces in the image
-        faces = faceCascade.detectMultiScale(gray,scaleFactor=2,
+        faces = faceCascade.detectMultiScale(gray,scaleFactor=1.5,
         minNeighbors=5,
         minSize=(30, 30),
         flags = cv2.CASCADE_SCALE_IMAGE)
